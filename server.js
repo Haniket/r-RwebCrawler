@@ -3,6 +3,9 @@ const express = require('express');
 require('dotenv').config();
 const crawlerService = require('./services/crawler.service');
 const app = express();
+app.use(cors({
+  origin: "*",
+  }))
 // const allowedOrigins=['https://lucky-hare-attire.cyclic.app/','http://localhost:3000','http://localhost:4200']
 // app.use(cors({
 //   origin: function (origin, callback) {
