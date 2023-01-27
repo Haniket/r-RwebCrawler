@@ -29,6 +29,7 @@ async function getAllDomain(req,res){
     
     response.push(record.get('domain'))  
   }
+  // console.log("I am getalldomain",response);
   res.send(response);
 }
 
